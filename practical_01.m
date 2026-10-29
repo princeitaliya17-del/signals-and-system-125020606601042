@@ -1,0 +1,23 @@
+clc;
+clear;
+close;
+%simple arithmatic operations
+a=10; b=5;
+disp("addition="+string(a+b));
+disp("subtraction="+string(a-b));
+disp("multiplication="+string(a*b));
+disp("division="+string(a/b));
+t=0:0.001:2*3.14;
+w=-0:1:20;
+x=sin(t);
+y = cos(w);
+subplot(2,1,1);
+plot(t,x);
+xlabel("time");
+ylabel("amplitude");
+title("continous time sinewave");
+subplot(2,1,2);
+stem(w,y);
+xlabel("time");
+ylabel("amplitude");
+title("discrete time cosine wave");
